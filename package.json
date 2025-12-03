@@ -1,0 +1,10 @@
+{
+  "name": "impact-coffee-moisture-synchroniser",
+  "version": "1.0.0",
+  "description": "Interactive demo for coffee bean moisture visualization",
+  "scripts": {
+    "start": "npx http-server -p 8000"
+  },
+  "author": "",
+  "license": "MIT"
+}
