@@ -56,8 +56,8 @@ Data mencakup 34 provinsi di Indonesia dengan atribut:
 ## 🚀 Cara Menggunakan
 
 ### Tanpa Server (Rekomendasi)
-1. Buka file `index_local.html` langsung di browser (double-click atau drag ke browser)
-2. Semua fitur akan berfungsi offline
+1. Buka file `index_local.html` langsung di browser (double-click atau drag ke browser). Ini adalah cara termudah — tidak perlu Python/Node.
+2. Semua fitur (chart, peta, filter tabel, download CSV, analisis) akan berfungsi offline pada `index_local.html`.
 
 ### Dengan Server (Opsional)
 Jika Anda punya Node.js:
