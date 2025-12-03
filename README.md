@@ -78,7 +78,6 @@ python -m http.server 8000
 ```
 tik fix/
 ├── index.html              # Landing page / homepage (this file)
-├── viz.html                # Visualisasi (server-mode page, was index.html)
 ├── index_local.html        # Versi lokal (data inline, no server)
 ├── css/
 │   └── styles.css         # Styling utama
