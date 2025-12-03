@@ -1,90 +1,51 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Impact of Coffee Bean Moisture Synchroniser</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" />
+  <title>Impact of Coffee Bean Moisture — Home</title>
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .hero { max-width:960px; margin:48px auto; text-align:center }
+    .hero h2 { font-size:2rem; margin-bottom:8px; color:#2d5016 }
+    .hero p { color:#6b5344; font-size:1.05rem }
+    .entry-buttons { margin-top:22px; display:flex; gap:12px; justify-content:center }
+    .intro-box { background:linear-gradient(180deg,#fff8f3,#f8efe3); padding:18px; border-radius:12px; border:1px solid #e1c6ac; box-shadow:0 8px 24px rgba(45,80,22,0.06); }
+    footer { text-align:center; color:#6b5344; margin:36px 0 }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <h1>Impact of Coffee Bean Moisture Synchroniser</h1>
-    <p class="subtitle">Visualisasi kelembapan udara provinsi Indonesia & perbandingan kadar air biji kopi</p>
+    <p class="subtitle">Landing page — ringkasan dan akses cepat ke visualisasi</p>
   </header>
 
   <main class="container">
-    <section class="controls">
-      <label for="provinceSelect">Pilih Provinsi:</label>
-      <select id="provinceSelect">
-        <option value="All">All</option>
-      </select>
-      <div class="control-buttons">
-        <button id="toggleLegend" class="btn ghost" type="button">Toggle Legend</button>
-        <button id="downloadCsv" class="btn" type="button">Download CSV</button>
+    <section class="hero">
+      <div class="intro-box">
+        <h2>Selamat datang</h2>
+        <p>Website ini menampilkan analisis kelembapan udara per provinsi di Indonesia dan perbandingan kadar air biji kopi (Normal vs Over Roast). Pilih cara Anda ingin melihat data:</p>
+        <div class="entry-buttons">
+          <a href="index_local.html" class="btn">Buka (Tanpa Server)</a>
+          <a href="viz.html" class="btn ghost">Buka (Dengan Server)</a>
+          <a href="README.md" class="btn ghost">Baca Dokumentasi</a>
+        </div>
       </div>
-    </section>
 
-    <section class="cards" id="cards">
-      <div class="card" id="card-humidity">
-        <h3>Humidity (%)</h3>
-        <div class="value" id="cardHumidity">—</div>
+      <div style="margin-top:20px; text-align:left;">
+        <h3 style="color:#2d5016">Ringkasan</h3>
+        <ul style="color:#6b5344">
+          <li>Interactive map dengan legenda kelembapan</li>
+          <li>Clustered column chart: Normal vs Over Roast</li>
+          <li>Filterable table dan export CSV</li>
+          <li>Analisis kesimpulan: jawaban eksplisit terhadap pertanyaan penelitian</li>
+        </ul>
       </div>
-      <div class="card" id="card-normal">
-        <h3>Normal (%)</h3>
-        <div class="value" id="cardNormal">—</div>
-      </div>
-      <div class="card" id="card-over">
-        <h3>Over Roast (%)</h3>
-        <div class="value" id="cardOver">—</div>
-      </div>
-      <div class="card" id="card-risk">
-        <h3>Moisture Risk Index</h3>
-        <div class="value" id="cardRisk">—</div>
-      </div>
-    </section>
-
-    <section class="visuals">
-      <div class="chart-wrap">
-        <canvas id="clusterChart"></canvas>
-      </div>
-      <div style="position:relative">
-        <div id="map" class="map"></div>
-        <div id="mapLegend" class="map-legend" aria-hidden="true"></div>
-      </div>
-    </section>
-
-    <section class="analysis-wrap">
-      <h2>Analisis Kesimpulan</h2>
-      <div id="analysisContent" style="background:linear-gradient(180deg,#f7fbff,#f1f7ff); padding:12px; border-radius:8px; border-left:4px solid #0ea5e9">
-        <p id="analysisText">Memproses data...</p>
-      </div>
-    </section>
-
-    <section class="table-wrap">
-      <div class="table-controls">
-        <h2 style="margin:0">Data Provinsi</h2>
-        <input id="tableSearch" class="search" placeholder="Search province or notes..." />
-      </div>
-      <table id="dataTable" class="display">
-        <thead>
-          <tr>
-            <th data-key="province">Province</th>
-            <th data-key="humidity">Humidity (%)</th>
-            <th data-key="normal_pct">Normal (%)</th>
-            <th data-key="overroast_pct">Over Roast (%)</th>
-            <th data-key="notes">Notes</th>
-          </tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-      </table>
     </section>
   </main>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-  <script src="js/main.js"></script>
+  <footer>
+    <small>Repository: <a href="https://github.com/atikazahra3176-glitch/coffee-bean-moisture" target="_blank">github.com/atikazahra3176-glitch/coffee-bean-moisture</a></small>
+  </footer>
 </body>
 </html>

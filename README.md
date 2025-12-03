@@ -16,6 +16,25 @@ Website interaktif dan responsif yang menampilkan visualisasi data kelembapan ud
 - **Tabel Data Filterable**: 
   - Search real-time berdasarkan province atau notes
   - Sort kolom (klik header untuk urutkan ascending/descending)
+````markdown
+# Impact of Coffee Bean Moisture Synchroniser
+
+Website interaktif dan responsif yang menampilkan visualisasi data kelembapan udara provinsi Indonesia dan perbandingan kadar air biji kopi (Normal vs Over Roast).
+
+## 🌟 Fitur Utama
+
+- **Slicer (Dropdown)**: Pilih provinsi atau lihat data seluruh Indonesia
+- **4 Kartu Metrik**: 
+  - Humidity (%)
+  - Normal (%)
+  - Over Roast (%)
+  - Moisture Risk Index
+- **Clustered Column Chart**: Perbandingan Normal vs Over Roast per provinsi
+- **Shape Map (Leaflet)**: Peta interaktif dengan marker berwarna sesuai kelembapan udara
+- **Legenda Peta**: Toggle untuk tampilkan/sembunyikan legenda humidity gradient
+- **Tabel Data Filterable**: 
+  - Search real-time berdasarkan province atau notes
+  - Sort kolom (klik header untuk urutkan ascending/descending)
 - **Download CSV**: Export data ke file CSV
 - **Analisis Kesimpulan**: Jawaban & statistik dataset dengan korelasi humidity vs over-roast
 
@@ -42,14 +61,14 @@ Data mencakup 34 provinsi di Indonesia dengan atribut:
 
 ### Dengan Server (Opsional)
 Jika Anda punya Node.js:
-```bash
+```powershell
 npm install
 npm start
 # Buka http://localhost:8000 di browser
 ```
 
 Atau gunakan Python:
-```bash
+```powershell
 python -m http.server 8000
 # Buka http://localhost:8000 di browser
 ```
@@ -58,7 +77,8 @@ python -m http.server 8000
 
 ```
 tik fix/
-├── index.html              # Versi server (fetch data dari file)
+├── index.html              # Landing page / homepage (this file)
+├── viz.html                # Visualisasi (server-mode page, was index.html)
 ├── index_local.html        # Versi lokal (data inline, no server)
 ├── css/
 │   └── styles.css         # Styling utama
@@ -116,4 +136,6 @@ GitHub: [@atikazahra3176-glitch](https://github.com/atikazahra3176-glitch)
 ## 📄 Lisensi
 
 MIT License
+
+````
 
