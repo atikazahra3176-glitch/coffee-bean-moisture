@@ -97,24 +97,17 @@ tik fix/
 
 **Jawaban:** **TIDAK**
 
-Berdasarkan analisis dataset 34 provinsi di Indonesia:
+Berdasarkan logika fisik dan observasi data (34 provinsi), berikut penjelasan yang lebih tepat:
 
-### Kadar Air >1% adalah NORMAL, BUKAN Over-Roasted
-- Kadar air 11-13% adalah standar industri untuk kopi mentah (green beans)
-- Kadar air >1% menunjukkan kopi masih dalam kondisi fresh dan lembab
-- **Over-roasted** adalah kategori hasil roasting, bukan kondisi kadar air penyimpanan
+### Prinsip Dasar dan Kesimpulan Logis
+- Secara umum, **kelembapan lingkungan tinggi** cenderung menghasilkan **kadar air biji yang lebih tinggi** pada saat penyimpanan; biji dengan kadar air lebih tinggi biasanya membutuhkan waktu lebih lama untuk kehilangan kelembapan saat roasting, sehingga **risiko over-roasted berkurang** pada pengaturan roasting standar.
+- Sebaliknya, **kelembapan lingkungan rendah** menghasilkan **kadar air biji yang lebih rendah**, sehingga biji lebih cepat kehilangan kelembapan saat roasting dan **risiko over-roasted meningkat** jika parameter roasting tidak disesuaikan.
 
-### Hubungan Kadar Air, Kelembapan, dan Proses Roasting
-Kadar air tinggi (dari kelembapan lingkungan tinggi) memengaruhi durasi roasting dan hasil akhir. Data menunjukkan:
-- Provinsi dengan kelembapan >80%: rata-rata over-roast lebih tinggi
-- Provinsi dengan kelembapan <60%: rata-rata over-roast lebih rendah
+### Observasi Dataset & Catatan
+- Dataset menunjukkan variasi dan beberapa anomali (mis. beberapa provinsi dengan kelembapan tinggi masih mencatat angka over-roast relatif tinggi). Ini tidak membatalkan prinsip dasar, melainkan menandakan adanya pengaruh variabel lain.
+- Faktor tambahan yang berperan termasuk: metode pengolahan pasca-panen, parameter roaster (suhu, aliran udara), durasi roasting, dan praktik penyimpanan lokal.
 
-### Korelasi Data
-- Terdapat korelasi positif antara kelembapan udara dan persentase over-roast
-- Provinsi tertinggi over-roast umumnya memiliki kelembapan tinggi
-- Ini menunjukkan bahwa kadar air (akibat kelembapan) memengaruhi hasil roasting
-
-**Kesimpulan:** Kadar air >1% adalah NORMAL dan **BUKAN penanda over-roasted**. Namun, kadar air **BUKAN faktor tunggal**—kelembapan udara di setiap provinsi yang berbeda-beda juga memengaruhi kadar air penyimpanan, yang kemudian mempengaruhi durasi dan hasil roasting. Over-roasted ditentukan oleh **kombinasi faktor**: kadar air awal, parameter roasting, dan durasi roasting.
+**Kesimpulan akhir:** Secara umum: **kelembapan tinggi → kadar air lebih tinggi → cenderung NORMAL**; **kelembapan rendah → kadar air lebih rendah → risiko Over-Roasted lebih tinggi** jika roasting tidak disesuaikan. Namun, kadar air **bukanlah satu-satunya penentu** — hasil akhir roasting adalah kombinasi dari kadar air awal, parameter roasting, durasi, dan praktik pengolahan/penyimpanan.
 
 ## 🛠️ Teknologi
 
