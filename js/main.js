@@ -238,22 +238,9 @@ function generateAnalysis() {
     • Rata-rata Over Roast di seluruh provinsi: <strong>${avgOverroast}%</strong> (jangkauan: ${minOverroast}% - ${maxOverroast}%)<br><br>
     
     <strong>2. Hubungan Kelembapan Udara dan Kadar Air pada Proses Roasting:</strong><br>
-    Meskipun kadar air >1% bukan over-roasted, kadar air MEMANG mempengaruhi proses roasting:<br>
-    • Wilayah dengan kelembapan tinggi (${maxHumidity}%, contoh: ${coffeeData.reduce((a,b)=>a.humidity > b.humidity ? a : b).province}) memiliki kadar air penyimpanan lebih tinggi<br>
-    • Kadar air tinggi pada biji mentah mengakibatkan:<br>
-      - Waktu roasting lebih lama (harus menguapkan air lebih banyak)<br>
-      - Suhu internal meningkat secara progresif<br>
-      - Operator harus menyesuaikan parameter roasting untuk hasil optimal<br><br>
-    
-    <strong>Contoh Praktis:</strong> Jika 3 biji kopi dengan kadar air berbeda disangrai dalam waktu SAMA:<br>
-    • Biji 1 (kadar air 5%): Panas cepat masuk → hasil Light/Normal<br>
-    • Biji 2 (kadar air 11%, NORMAL): Panas masuk sedang → hasil Normal/Medium<br>
-    • Biji 3 (kadar air 15%, TINGGI): Panas masuk lambat (air menyerap panas) → pada akhir waktu, suhu internal lebih tinggi → hasil Medium/Over-Roasted<br>
-    ⟹ Dengan waktu roasting sama, biji dengan kadar air lebih tinggi cenderung menghasilkan over-roasted!<br><br>
-    
+    Kadar air tinggi (dari kelembapan lingkungan tinggi) memengaruhi durasi roasting dan hasil akhir.<br>
     • Provinsi dengan humidity >80%: rata-rata over-roast ${(coffeeData.filter(d=>d.humidity>80).reduce((s,d)=>s+d.overroast_pct,0)/Math.max(1,coffeeData.filter(d=>d.humidity>80).length)).toFixed(1)}%<br>
-    • Provinsi dengan humidity <60%: rata-rata over-roast ${(coffeeData.filter(d=>d.humidity<60).reduce((s,d)=>s+d.overroast_pct,0)/Math.max(1,coffeeData.filter(d=>d.humidity<60).length)).toFixed(1)}%<br>
-    • Korelasi kelembapan vs over-roast: <strong>${correlation}</strong><br><br>
+    • Provinsi dengan humidity <60%: rata-rata over-roast ${(coffeeData.filter(d=>d.humidity<60).reduce((s,d)=>s+d.overroast_pct,0)/Math.max(1,coffeeData.filter(d=>d.humidity<60).length)).toFixed(1)}%<br><br>
     
     <strong>3. Data Bukti:</strong><br>
     • Tertinggi over-roast: ${maxOverroastProvince.province} (${maxOverroastProvince.overroast_pct}%, humidity ${coffeeData.find(d=>d.province===maxOverroastProvince.province).humidity}%)<br>

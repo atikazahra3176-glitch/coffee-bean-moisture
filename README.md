@@ -97,12 +97,24 @@ tik fix/
 
 **Jawaban:** **TIDAK**
 
-Berdasarkan analisis dataset:
-- Rata-rata persentase Over Roast di seluruh provinsi: **11.0%**
-- Jangkauan: **4% - 25%**
-- Kadar air >1% adalah kondisi NORMAL dan sehat untuk kopi yang disimpan
-- Over-roasting ditentukan oleh tingkat kematangan roasting, BUKAN kadar air penyimpanan
-- Kelembapan udara memengaruhi penyimpanan tetapi TIDAK menentukan over-roasting
+Berdasarkan analisis dataset 34 provinsi di Indonesia:
+
+### Kadar Air >1% adalah NORMAL, BUKAN Over-Roasted
+- Kadar air 11-13% adalah standar industri untuk kopi mentah (green beans)
+- Kadar air >1% menunjukkan kopi masih dalam kondisi fresh dan lembab
+- **Over-roasted** adalah kategori hasil roasting, bukan kondisi kadar air penyimpanan
+
+### Hubungan Kadar Air, Kelembapan, dan Proses Roasting
+Kadar air tinggi (dari kelembapan lingkungan tinggi) memengaruhi durasi roasting dan hasil akhir. Data menunjukkan:
+- Provinsi dengan kelembapan >80%: rata-rata over-roast lebih tinggi
+- Provinsi dengan kelembapan <60%: rata-rata over-roast lebih rendah
+
+### Korelasi Data
+- Terdapat korelasi positif antara kelembapan udara dan persentase over-roast
+- Provinsi tertinggi over-roast umumnya memiliki kelembapan tinggi
+- Ini menunjukkan bahwa kadar air (akibat kelembapan) memengaruhi hasil roasting
+
+**Kesimpulan:** Biji kopi dengan kadar air >1% **TIDAK termasuk kategori over-roasted**—kadar air >1% adalah kondisi NORMAL. Namun, kadar air tinggi (dari kelembapan lingkungan tinggi) **MEMPENGARUHI** proses roasting dan meningkatkan risiko over-roast jika parameter roasting tidak disesuaikan.
 
 ## 🛠️ Teknologi
 
