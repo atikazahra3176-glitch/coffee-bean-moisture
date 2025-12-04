@@ -247,7 +247,7 @@ function generateAnalysis() {
     • Terendah over-roast: ${minOverroastProvince.province} (${minOverroastProvince.overroast_pct}%, humidity ${coffeeData.find(d=>d.province===minOverroastProvince.province).humidity}%)<br><br>
     
     <strong>4. Kesimpulan:</strong><br>
-    Kadar air >1% adalah NORMAL, bukan over-roasted. Namun, kadar air tinggi (dari kelembapan lingkungan) MEMPENGARUHI hasil roasting—biji dengan kadar air lebih tinggi cenderung menghasilkan over-roast jika parameter roasting tidak disesuaikan.
+    Kadar air >1% adalah NORMAL dan BUKAN penanda over-roasted. Namun, kadar air BUKAN faktor tunggal—kelembapan udara di setiap provinsi yang berbeda-beda juga memengaruhi kadar air penyimpanan, yang kemudian mempengaruhi durasi dan hasil roasting. Over-roasted ditentukan oleh kombinasi faktor: kadar air awal, parameter roasting, dan durasi roasting.
   `;
 }
 
